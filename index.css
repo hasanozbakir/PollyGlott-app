@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+/* Typography */
+
+.sub-text {
+    display: block;
+    font-size: .6rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logo {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: #32CD32;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.logo-icon {
+    width: 95px;  
+}
+
+.radio img {
+    margin: auto 0 auto .5em;
+    border: 1px solid #999999;
+}
+
+.copy-message {
+    display: none;
+    position: absolute;
+    top: 2em;
+    right: 0;
+    background: transparent;
+    color: #32CD32;
+    padding: 0;
+    font-size: 14px;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+}
+
+/* Layout */
+
+header {
+    background: #1C325F url("assets/worldmap.png");
+    background-size: cover;
+    min-width: 340px;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 540px;
+    min-width: 340px;
+    margin: 0 auto;
+    padding: 1em .5em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #252F42;
+    border-radius: 1em;
+    gap: 1em;
+    padding: 1.5em 1em;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -1px;
+    gap: 1em;
+}
+
+.text-input-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+/* Input Fields */
+
+.textarea-label,
+legend {
+    font-weight: 700;
+    color: #035A9D;
+}
+
+.textarea-label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+textarea {
+    background-color: #EFF0F4;
+    border: none;
+    width: 100%;
+    border-radius: .5em;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    margin: 0;
+    padding: .5em;
+    opacity: .8;
+    resize: none;
+    outline: none;
+}
+
+textarea:not([readonly]):focus,
+textarea:not([readonly]):active {
+    outline: none;
+    box-shadow: 0 4px 4px grey;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    margin: 1.3em 0;
+}
+
+input[type='radio'] {
+    accent-color: #008BF7;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    width: 2em;
+    height: 100%;
+    outline: none;
+    opacity: .3em;
+    margin-bottom: .8em;
+}
+
+/* Buttons */
+
+.submit-btn {
+    background-color: #035A9D;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .6em;
+    width: 100%;
+    border-radius: .5em;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-btn {
+    position: absolute;
+    font-size: 1.55rem;
+    top: 2em;
+    right: .1em;
+    border: none;
+    cursor: copy;
+    opacity: .3;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+}
+
+.copy-btn:hover,
+.copy-btn:focus {
+    opacity: .8;
+}
+
+/* utility class */
+.reverse {
+    display: none;
+}
+
+/* https://stackoverflow.com/questions/4920281/how-to-change-the-size-of-the-radio-button-using-css */

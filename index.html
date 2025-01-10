@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Landing Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <section class="container logo-container">
+                <img src="assets/parrot.png" class="logo-icon" alt="parrot image"/>
+                <h1 class="logo">PollyGlot
+                    <span class="sub-text">
+                        Perfect Translation Every Time
+                    </span>
+                </h1>
+            </section>
+        </header>
+        <main>
+            <section class="container"> 
+                <form id="form" class="form">  
+                    <div id="text-in" class="text-input-container">               
+                        <label for="before-translation" id="before-translation-label" class="textarea-label">
+                            Text to translate 👇
+                        </label>
+                        <textarea 
+                            id="before-translation" 
+                            name="before-translation" 
+                            rows="5"></textarea>
+                    </div>
+                    <div id="text-out" class="text-input-container reverse">
+                        <label for="after-translation" id="after-translation-label" class="textarea-label">
+                            Your translation 👇
+                        </label>
+                        <textarea id="after-translation" name="after-translation" rows="5" readonly></textarea>
+                        <button id="copy-btn" class="copy-btn" type="button">🗀</button>
+                        <div id="copy-message" class="copy-message">Copied!</div>
+
+                    </div>
+                    <fieldset id="fieldset">
+                        <legend>Select language 👇</legend>
+                        <div class="radio">
+                            <input type="radio" id="french" name="lang" value="French" checked />
+                            <label for="french">French</label>
+                            <img src="assets/fr-flag.png">
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="spanish" name="lang" value="Spanish "/>
+                            <label for="spanish">Spanish</label>
+                            <img src="assets/sp-flag.png">
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="japanese" name="lang" value="Japanese" />
+                            <label for="japanese">Japanese</label>
+                            <img src="assets/jpn-flag.png">
+                        </div>
+                    </fieldset>
+                    <button id="translate-btn" class="submit-btn">Translate</button>
+                <form>
+            </section>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
