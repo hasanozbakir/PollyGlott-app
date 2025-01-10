@@ -138,8 +138,8 @@ input[type='radio'] {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
     transform: scale(1.5);
-    width: 1.6em;
-    height: 100%;
+    width: 2em;
+    height: 75%;
     outline: none;
     opacity: .3em;
     margin-bottom: .8em;
